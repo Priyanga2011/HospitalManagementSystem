@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-config-server
+  profiles:
+    active: development,production
+  cloud:
+    config:
+      server:
+       git:
+         uri: https://github.com/Priyanga2011/HospitalManagementSystem
+         search-paths: server-config/
+server:
+  port: 8888
+  
+management:
+  security:
+    enabled: false
